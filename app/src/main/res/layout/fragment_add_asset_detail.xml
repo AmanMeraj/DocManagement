@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddAssetDetail.FragmentAddAssetDetail">
+    <TextView
+        android:id="@+id/title"
+        android:text="Add Asset"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_card"
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <ImageView
+                    android:id="@+id/img"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/heading"
+                android:text="Fridge"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/interbold"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/img_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <RelativeLayout
+                android:id="@+id/rel_trail"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_1"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/intermedium"
+                    android:text="Electronics "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="4dp"
+                    android:layout_toEndOf="@+id/text_1"
+                    android:src="@drawable/right_chevron"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_toEndOf="@+id/img1"
+                    android:id="@+id/text_2"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/intermedium"
+                    android:text="Appliance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="4dp"
+                    android:layout_toEndOf="@+id/text_2"
+                    android:src="@drawable/right_chevron"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_toEndOf="@+id/img2"
+                    android:id="@+id/text_3"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/intermedium"
+                    android:text="Fridge "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/rel_trail"
+                android:id="@+id/location_rel"
+                android:elevation="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="3dp"
+                    android:id="@+id/location_feild"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:boxStrokeColor="@color/white"
+                    android:hint="Location">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/intermedium"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:id="@+id/location_edt"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/black"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/location_rel"
+                android:id="@+id/brand_rel"
+                android:elevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="3dp"
+                    android:id="@+id/brand_feild"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:boxStrokeColor="@color/white"
+                    android:hint="Brand">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/intermedium"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:id="@+id/brand_edt"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/black"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/purchase_parent_rel"
+                android:layout_below="@+id/brand_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/white_bg"
+                        android:layout_below="@+id/location_rel"
+                        android:id="@+id/purchase_date_rel"
+                        android:elevation="5dp"
+                        android:layout_weight="1"
+
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:background="@color/white"
+                            android:layout_marginEnd="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="3dp"
+                            android:id="@+id/purchase_date_feild"
+                            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="@color/white"
+                            android:hint="Enter Purchase Date">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:fontFamily="@font/intermedium"
+                                android:textSize="12sp"
+                                android:inputType="text"
+                                android:id="@+id/purchase_date_edt"
+                                android:maxLines="1"
+                                android:layout_width="match_parent"
+                                android:textColorHint="@color/black"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:background="@drawable/white_bg"
+                        android:layout_below="@+id/location_rel"
+                        android:id="@+id/purchase_price_rel"
+                        android:elevation="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:background="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="3dp"
+                            android:id="@+id/purchase_price_feild"
+                            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="@color/white"
+                            android:hint="Enter Purchase Price">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:fontFamily="@font/intermedium"
+                                android:textSize="12sp"
+                                android:inputType="text"
+                                android:id="@+id/purchase_price_edt"
+                                android:maxLines="1"
+                                android:layout_width="match_parent"
+                                android:textColorHint="@color/black"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/purchase_parent_rel"
+                android:id="@+id/mobile_rel"
+                android:elevation="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="3dp"
+                    android:id="@+id/mobile_feild"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:boxStrokeColor="@color/white"
+                    android:hint="Registered Mobile Number ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/intermedium"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:id="@+id/mobile_edt"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/black"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/serial_number_parent_rel"
+                android:layout_below="@+id/mobile_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/white_bg"
+                        android:layout_below="@+id/location_rel"
+                        android:id="@+id/serial_number_rel"
+                        android:elevation="5dp"
+                        android:layout_weight="1"
+
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:background="@color/white"
+                            android:layout_marginEnd="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="3dp"
+                            android:id="@+id/serial_number_feild"
+                            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="@color/white"
+                            android:hint="Serial Number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:fontFamily="@font/intermedium"
+                                android:textSize="12sp"
+                                android:inputType="text"
+                                android:id="@+id/serial_number_edt"
+                                android:maxLines="1"
+                                android:layout_width="match_parent"
+                                android:textColorHint="@color/black"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:background="@drawable/white_bg"
+                        android:id="@+id/warranty_rel"
+                        android:elevation="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:background="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:layout_margin="3dp"
+                            android:id="@+id/warranty_feild"
+                            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:boxStrokeColor="@color/white"
+                            android:hint="Warranty End date">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:fontFamily="@font/intermedium"
+                                android:textSize="12sp"
+                                android:inputType="text"
+                                android:id="@+id/warranty_edt"
+                                android:maxLines="1"
+                                android:layout_width="match_parent"
+                                android:textColorHint="@color/black"
+                                android:background="@color/white"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/serial_number_parent_rel"
+                android:id="@+id/product_warrenty_button_parent_rel"
+                android:elevation="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_warrenty"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/intermedium"
+                    android:text="Is Your Product Under Warranty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:id="@+id/yes_btn"
+                    android:background="@drawable/blue_bg"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/text_warrenty"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="5dp"
+
+                        android:text="YES"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/no_btn"
+                    android:background="@drawable/inactive_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/yes_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/interbold"
+                        android:padding="5dp"
+                        android:text="NO"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/product_warrenty_button_parent_rel"
+                android:id="@+id/service_rel"
+                android:elevation="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="3dp"
+                    android:id="@+id/service_feild"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:boxStrokeColor="@color/white"
+                    android:hint="Service Contact (If Any)">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:fontFamily="@font/intermedium"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:id="@+id/service_edt"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/black"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/white_bg"
+                android:layout_below="@+id/service_rel"
+                android:id="@+id/plus_rel"
+                android:elevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/plus_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/plus2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/plus_icon"
+                    android:text="Invoice Upload"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/intermedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/interbold"
+                android:textSize="15sp"
+                android:text="Submit"
+                android:id="@+id/submit_btn"
+                android:layout_below="@+id/plus_rel"
+                android:background="@drawable/orange_curve2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

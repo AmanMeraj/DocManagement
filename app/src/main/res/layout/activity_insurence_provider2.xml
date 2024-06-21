@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmcProvider.ActivityAmcProvider">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:padding="6dp"
+            android:src="@drawable/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Insurance Providers"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interbold"
+            android:layout_alignTop="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rc_amc"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

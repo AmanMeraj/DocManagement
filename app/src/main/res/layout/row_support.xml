@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/ques_text"
+        android:text="Q."
+        android:layout_marginHorizontal="10dp"
+       android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interblack"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/intermedium"
+        android:text="Simply Dummy Text ?"
+        android:id="@+id/question"
+        android:layout_toEndOf="@+id/ques_text"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <ImageView
+        android:padding="5dp"
+        android:src="@drawable/down_chevron"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <View
+        android:background="#D9E2E7"
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen.ActivitySplash"
+    android:background="#E9EEF1">
+    <ImageView
+        android:layout_centerHorizontal="true"
+
+        android:layout_above="@+id/rel_logo"
+        android:src="@drawable/splash_img"
+        android:layout_width="220dp"
+        android:layout_height="280dp">
+
+    </ImageView>
+    <RelativeLayout
+        android:background="@drawable/curve_bg"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rel_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/newlogo"
+           android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="60dp"
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        </ImageView>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/text_1"
+            android:layout_marginVertical="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interbold"
+            android:text="From Warranty to Resolution,
+We've Got You Covered."
+            android:layout_below="@+id/logo"
+            android:layout_marginHorizontal="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="60dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/interbold"
+            android:text="Get Started"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/text_1"
+            android:id="@+id/button"
+            android:background="@drawable/button_bg"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/intermedium"
+            android:layout_below="@+id/button"
+            android:text="You accept terms &amp; privacy Policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

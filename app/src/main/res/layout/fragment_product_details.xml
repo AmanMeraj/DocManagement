@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white_bg"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProductsDetails.FragmentProductDetails">
+    <include
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        layout="@layout/search_bar"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="@drawable/white_bg"
+                android:elevation="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/detail_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img_card"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/heading"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/interbold"
+                    android:textColor="@color/black"
+                    android:text="Master Refrigerator"
+                    android:layout_marginVertical="10dp"
+                    android:layout_below="@+id/img_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/heading"
+                    android:layout_alignTop="@+id/heading"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/warranty_txt"
+                    android:layout_marginBottom="10dp"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="5dp"
+                    android:background="@drawable/blue_bg"
+                   android:layout_below="@+id/img_card"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/intermedium"
+                    android:textSize="8sp"
+                    android:text="UNDER WARRANTY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/warranty_txt"
+                    android:id="@+id/days_txt"
+                    android:layout_marginBottom="10dp"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="8dp"
+                    android:background="@drawable/orange_bg"
+                   android:layout_alignTop="@+id/warranty_txt"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/intermedium"
+                    android:textSize="8sp"
+                    android:text="300 DAYS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <RelativeLayout
+                    android:id="@+id/rel_trail"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_below="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Electronics "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                     android:id="@+id/img1"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="4dp"
+                        android:layout_toEndOf="@+id/text_1"
+                        android:src="@drawable/right_chevron"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:layout_toEndOf="@+id/img1"
+                        android:id="@+id/text_2"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Appliance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="4dp"
+                        android:layout_toEndOf="@+id/text_2"
+                        android:src="@drawable/right_chevron"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:layout_toEndOf="@+id/img2"
+                        android:id="@+id/text_3"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Fridge "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/rel_trail"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_weight=".8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_brand"
+                            android:layout_marginStart="10dp"
+                            android:text="Brand : Samsung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_below="@+id/tv_brand"
+                            android:id="@+id/tv_model"
+                            android:layout_marginStart="10dp"
+                            android:text="Model : S2123/A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_purchase_date"
+                            android:text="Purchase Date : 22/06/2024"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_below="@+id/tv_purchase_date"
+                            android:id="@+id/tv_purchase_price"
+                            android:text="Purchase Price : 45000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/linear1"
+                    android:id="@+id/tv_sr_no"
+                    android:layout_marginStart="10dp"
+                    android:text="Serial Number : S2123/A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:elevation="5dp"
+                android:id="@+id/brand_contact_card"
+                android:background="@drawable/blue_bg"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/detail_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_brand_contact_detail"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/interbold"
+                    android:paddingVertical="5dp"
+                    android:text="Brand Contact Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_below="@+id/tv_brand_contact_detail"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_brand_number"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/interblack"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="+91-5478962457"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/service_hist_rel"
+                android:elevation="5dp"
+                android:background="@drawable/white_bg"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/brand_contact_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="15sp"
+                    android:text="Service History"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/interbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/file"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/insur_amc_rel"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/service_hist_rel"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:elevation="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/white_bg"
+                        android:id="@+id/insurance_rel"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_insurance"
+                            android:layout_marginVertical="20dp"
+                            android:text="INSURANCE"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/interbold"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <ImageView
+                            android:padding="3dp"
+                            android:src="@drawable/insurance1"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/insurance_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/white_bg"
+                        android:id="@+id/amc_rel"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_amc"
+                            android:layout_marginVertical="20dp"
+                            android:text="AMC"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/interbold"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <ImageView
+                            android:padding="3dp"
+                            android:src="@drawable/employee"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/amc_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/view_invoice_rel"
+                android:elevation="5dp"
+                android:background="@drawable/white_bg"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/insur_amc_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="15sp"
+                    android:text="View Invoice"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/interbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bill"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
