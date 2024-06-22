@@ -16,14 +16,16 @@ android:title=""
     android:checked="false">
 
 </item>
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        android:title="Settings">
+
+    </item>
     <item android:id="@+id/support"
     android:icon="@drawable/chat"
     android:title="Support">
 
 </item>
-    <item android:id="@+id/settings"
-    android:icon="@drawable/setting"
-    android:title="Settings">
 
-</item>
 </menu>

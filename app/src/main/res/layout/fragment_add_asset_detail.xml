@@ -195,36 +195,20 @@
                         android:elevation="5dp"
                         android:layout_weight="1"
 
-                        android:layout_marginHorizontal="10dp"
+                       android:layout_marginHorizontal="10dp"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:background="@color/white"
-                            android:layout_marginEnd="5dp"
-                            android:backgroundTint="@color/white"
-                            android:layout_margin="3dp"
-                            android:id="@+id/purchase_date_feild"
-                            style="@style/Widget.Material3.TextInputLayout.FilledBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:boxStrokeWidth="0dp"
-                            app:boxStrokeWidthFocused="0dp"
-                            app:boxStrokeColor="@color/white"
-                            android:hint="Enter Purchase Date">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:fontFamily="@font/intermedium"
-                                android:textSize="12sp"
-                                android:inputType="text"
-                                android:id="@+id/purchase_date_edt"
-                                android:maxLines="1"
-                                android:layout_width="match_parent"
-                                android:textColorHint="@color/black"
-                                android:background="@color/white"
-                                android:layout_height="wrap_content"
-                                />
-
-                        </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_height="match_parent">
+                      <TextView
+                          android:layout_centerVertical="true"
+                          android:layout_marginEnd="10dp"
+                          android:id="@+id/purchase_date_tv"
+                          android:textColor="@color/black"
+                          android:fontFamily="@font/intermedium"
+                          android:textSize="12sp"
+                          android:layout_marginStart="20dp"
+                          android:text="Select Purchase Date"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"/>
 
                     </RelativeLayout>
                     <RelativeLayout
@@ -233,6 +217,7 @@
                         android:layout_below="@+id/location_rel"
                         android:id="@+id/purchase_price_rel"
                         android:elevation="5dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:layout_marginEnd="10dp"
                         android:layout_width="0dp"
@@ -253,7 +238,7 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:fontFamily="@font/intermedium"
                                 android:textSize="12sp"
-                                android:inputType="text"
+                                android:inputType="number"
                                 android:id="@+id/purchase_price_edt"
                                 android:maxLines="1"
                                 android:layout_width="match_parent"
@@ -292,7 +277,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:fontFamily="@font/intermedium"
                         android:textSize="15sp"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:id="@+id/mobile_edt"
                         android:maxLines="1"
                         android:layout_width="match_parent"
@@ -421,7 +406,7 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:padding="5dp"
-
+                        android:id="@+id/yes"
                         android:text="YES"
                         android:textSize="12sp"
                         android:textColor="@color/white"
@@ -441,6 +426,7 @@
                     <TextView
                         android:fontFamily="@font/interbold"
                         android:padding="5dp"
+                        android:id="@+id/no"
                         android:text="NO"
                         android:textSize="12sp"
                         android:textColor="@color/black"

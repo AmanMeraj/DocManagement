@@ -13,6 +13,7 @@ import android.view.View;
 import com.example.docmanagementapp.AddAsset.FragmentAddAsset;
 import com.example.docmanagementapp.Products.FragmentProducts;
 import com.example.docmanagementapp.Home.FragmentHome;
+import com.example.docmanagementapp.Profile.ActivityProfile;
 import com.example.docmanagementapp.Profile.FragmentProfile;
 import com.example.docmanagementapp.R;
 import com.example.docmanagementapp.Settings.FragmentSettings;
@@ -48,7 +49,8 @@ public class ActivityContainer extends AppCompatActivity {
         binding.profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new FragmentProfile()).addToBackStack(null).commit();
+            Intent i = new Intent(ActivityContainer.this, ActivityProfile.class);
+            startActivity(i);
             }
         });
     }

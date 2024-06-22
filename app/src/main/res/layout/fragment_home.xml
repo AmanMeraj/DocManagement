@@ -221,7 +221,6 @@
                 <androidx.cardview.widget.CardView
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
 
                     android:id="@+id/find_amc_card"
                     app:cardElevation="5dp"
@@ -273,8 +272,7 @@
                     android:layout_toEndOf="@+id/find_amc_card"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
                         android:orientation="vertical"
@@ -282,7 +280,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                             <RelativeLayout
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="9dp"
                                 android:elevation="5dp"
                                 android:background="@drawable/white_bg"
                                 android:id="@+id/find_service_center"
@@ -326,6 +326,8 @@
 
                             </RelativeLayout>
                             <RelativeLayout
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="5dp"
                                 android:elevation="5dp"
                                 android:layout_marginBottom="10dp"
                                 android:background="@drawable/white_bg"
@@ -333,19 +335,21 @@
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
+
                                 <TextView
-                                    android:textSize="15sp"
                                     android:id="@+id/extended"
-                                    android:layout_marginStart="10dp"
-                                    android:textColor="@color/black"
-                                    android:fontFamily="@font/interbold"
-                                    android:layout_marginTop="10dp"
-                                    android:text="EXTENDED"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/interbold"
+                                    android:text="EXTENDED"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp">
 
 
                                 </TextView>
+
                                 <TextView
                                     android:layout_marginBottom="15dp"
                                     android:layout_below="@+id/extended"
