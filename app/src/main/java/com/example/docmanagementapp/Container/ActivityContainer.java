@@ -42,15 +42,15 @@ public class ActivityContainer extends AppCompatActivity {
         binding.plusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new FragmentAddAsset()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new FragmentAddAsset()).addToBackStack(null).commit();
 
             }
         });
         binding.profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent i = new Intent(ActivityContainer.this, ActivityProfile.class);
-            startActivity(i);
+                Intent i = new Intent(ActivityContainer.this, ActivityProfile.class);
+                startActivity(i);
             }
         });
     }
